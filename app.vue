@@ -6,7 +6,7 @@
 <script>
   export default {
     data: () => ({
-      message: "Hello World"
+      message: "tax test"
     })
   }
 </script>
