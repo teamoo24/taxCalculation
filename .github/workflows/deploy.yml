@@ -37,11 +37,11 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-        working-directory: ./src
+        working-directory: ./
 
       - name: Generate
         run: yarn generate
-        working-directory: ./src
+        working-directory: ./
 
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -50,5 +50,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          local-dir: ./src/dist/
-          server-dir: ./public_html/
+          local-dir: .dist/
+          server-dir: ./public_html/project/nuxt_project/nuxt3-tax-calculation/
